@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.masaischool</groupId>
-  <artifactId>granularity_mismatch_example</artifactId>
+  <artifactId>jpql_example_b25_sb101</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>granularity_mismatch_example</name>
+  <name>jpql_example_b25_sb101</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
