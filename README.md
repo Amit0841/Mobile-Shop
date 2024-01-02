@@ -10,7 +10,7 @@ Mobile Shop focuses on delivering an intuitive interface for users to navigate t
 
 ## Access
 
-Access the Mobile Shop application through the following URL: [Mobile Shop](https://Digital-Device-Emporium)
+Access the Mobile Shop application through the following URL: [Mobile Shop](https://6593a8a973b2164c52441e50--magical-malabi-b00d0b.netlify.app/)
 
 ## Key Features
 
@@ -27,7 +27,7 @@ Access the Mobile Shop application through the following URL: [Mobile Shop](http
 ## Installation & Getting Started
 
 1. Clone the repository: `git clone <https://github.com/Amit0841/Mobile-Shop>`
-2. Navigate to the frontend directory and run: `ng serve`
+2. Running java application.
 
 ## User Guide
 
