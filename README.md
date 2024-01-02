@@ -2,7 +2,7 @@
 
 ## Project Description
 
-Mobile Shop is a application user can perchese mobiles. user can login / signup, Add product to cart. The system will be developed using Java programming language, MySQL as the database management system, and Hibernate as the Object-Relational Mapping (ORM) framework. 
+Mobile Shop is a application user can perchese mobiles. user can login / signup, Add products to the cart, Remove products from car. The system will be developed using Java programming language, MySQL as the database management system, and Hibernate as the Object-Relational Mapping (ORM) framework. 
 
 ## System Overview
 
