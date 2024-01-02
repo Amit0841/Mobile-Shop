@@ -52,9 +52,9 @@ Access the Mobile Shop application through the following URL: [Mobile Shop](http
 
 ### Cart
 
-- **POST /cart/:customerId:/:mobileId:** Add a mobile to cart.
+- **POST /cart/:customerId/:mobileId:** Add a mobile to cart.
 - **GET /cart/:customerId:** Get all mobile from the customer cart.
-- **DELETE /cart/delete/:customerId:/:mobileId:** Remove a mobile device from the cart.
+- **DELETE /cart/delete/:customerId/:mobileId:** Remove a mobile device from the cart.
 - 
 ## Technology Stack
 
