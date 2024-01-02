@@ -40,16 +40,22 @@ Access the Mobile Shop application through the following URL: [Mobile Shop](http
 
 ### Authentication
 
-- **POST /users:** Register a new user.
-- **GET /logini:** Log in an existing user.
+- **POST /customer/add:** Register a new user.
+- **GET /customer/logini:** Log in an existing user.
 
 ### Products
 
-- **GET /products:** Retrieve all available mobile devices.
-- **GET /products/:id:** Retrieve details of a specific device.
-- **POST /products:** Add a new mobile device to the inventory.
-- **DELETE /products/:id:** Remove a mobile device from the inventory.
+- **GET /mobile/get:** Retrieve all available mobile devices.
+- **GET /mobile/get/:id:** Retrieve details of a specific device.
+- **POST /mobile/add:** Add a new mobile device to the inventory.
+- **DELETE /mobile/delete/:id:** Remove a mobile device from the inventory.
 
+### Cart
+
+- **POST /cart/:customerId:/:mobileId:** Add a mobile to cart.
+- **GET /cart/:customerId:** Get all mobile from the customer cart.
+- **DELETE /cart/delete/:customerId:/:mobileId:** Remove a mobile device from the cart.
+- 
 ## Technology Stack
 
 - **Front-end:** HTML, CSS, JavaScript
