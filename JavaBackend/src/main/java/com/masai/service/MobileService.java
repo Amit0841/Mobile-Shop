@@ -43,13 +43,14 @@ public class MobileService implements MobileServiceInterface{
 		Optional<Mobile> mobile=mobileRepository.findById(mobileId);
 		return mobile.get();
 	}
+	
 	@Override
 	public Mobile addToCart(Cart cart, Integer customerId, Integer mobileId) {
 		Optional<Mobile> m=mobileRepository.findById(mobileId);
 		Optional<Customer> cus=customerRepository.findById(customerId);
 		Cart c=cartRepository.findByCustomerAndMobile(cus.get(),m.get());
 		if(c!=null) {
-			return null;
+			throw new  RuntimeException("Item already added");
 		}else {
 			cart.setCustomer(cus.get());
 			cart.setMobile(m.get());
@@ -110,6 +111,19 @@ Optional<Customer> cus=customerRepository.findById(customerId);
 	public List<Orders> getOrder(Integer customerId) {
 		List<Orders> ord=orderRepository.findByCustomerCustomerId(customerId);
 		return ord;
+	}
+	@Override
+	public List<Mobile> find( String name) {
+		
+		List<Mobile> mobile=mobileRepository.findByMobileNameIgnoreCaseContaining(name);
+		
+		return mobile;
+	}
+	@Override
+	public Mobile deleteById(Integer mobileId) {
+		Optional<Mobile> mobile=mobileRepository.findById(mobileId);
+		mobileRepository.deleteById(mobileId);
+		return mobile.get();
 	}
 
 }

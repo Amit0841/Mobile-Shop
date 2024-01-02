@@ -40,5 +40,13 @@ public class MobileController {
 	public ResponseEntity<Mobile> getMobileById(@PathVariable Integer mobileId){
 		return new ResponseEntity<Mobile>(mobileServiceInterface.getMobilesById(mobileId), HttpStatus.OK);
 	}
-
+	
+	@GetMapping("/find/{name}")
+	public ResponseEntity<List<Mobile>> find(@PathVariable String name){
+		return new ResponseEntity<List<Mobile>>(mobileServiceInterface.find(name), HttpStatus.OK);
+	}
+	@DeleteMapping("/delete/{mobileId}")
+	public ResponseEntity<Mobile> delete(@PathVariable Integer mobileId){
+		return new ResponseEntity<Mobile>(mobileServiceInterface.deleteById(mobileId), HttpStatus.OK);
+	}
 }

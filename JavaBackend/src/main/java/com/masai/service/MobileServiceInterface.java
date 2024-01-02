@@ -24,4 +24,8 @@ public interface MobileServiceInterface {
 
 	List<Orders> getOrder(Integer customerId);
 
+	List<Mobile> find( String name);
+
+	Mobile deleteById(Integer mobileId);
+
 }
